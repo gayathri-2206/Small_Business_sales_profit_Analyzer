@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 35px;
+            width: 360px;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #11998e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0f7f73;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #11998e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Create Account</h2>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+</div>
+
+</body>
+</html>
