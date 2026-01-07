@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #232526, #414345);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dashboard {
+            background: white;
+            padding: 40px;
+            width: 450px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+
+        h2 {
+            color: #232526;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .user {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1d2671;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #c33764;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            background: #a72d52;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h2>Welcome</h2>
+    <div class="user">{{ user }}</div>
+    <p>You have successfully logged in using JWT Authentication.</p>
+    <a href="/logout">Logout</a>
+</div>
+
+</body>
+</html>
